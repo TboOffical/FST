@@ -1,0 +1,172 @@
+<html>
+
+<head>
+    <title>Flo's Hous</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div id="sign" class="modal">
+
+        <div class="modal-content">
+            <span class="close">&times;</span>
+
+            <iframe
+                src="https://docs.google.com/forms/d/e/1FAIpQLSdSY6yUc-GJiFyvAk3fjRHXZDNi9jLwqDSVDGJ7WhlBRUIDfg/viewform?embedded=true"
+                width="1000" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+        </div>
+    </div>
+
+    <h1 class="animate__bounceIn">Welcome to The Best class in DC</h1>
+
+    <td>
+        <h1 style="position: absolute;
+        left: 10;
+        bottom: 0;"> <i class="fa fa-user" style="font-size:36px"></i>
+            Flo Has Left The Building</h1>
+    </td>
+
+    <h2 class="animate__fadeIn">Unity VR, Introduction to Unity, Argumented Relity Creators</h2>
+
+    <div class="border">
+        <img width="300" height="300" onclick="window.open('https://cospaces.io')"
+            src="https://forum.edu.cospaces.io/uploads/default/original/2X/9/96d88674cee7f3e6c0f51a8eff778be0c8606d3a.png">
+        <img width="300" height="300" onclick="window.open('https://unity.com')"
+            src="https://unity3d.com/profiles/unity3d/themes/unity/images/pages/branding_trademarks/unity-tab-square-black.png">
+
+    </div>
+
+    <h1>________________________________</h1>
+
+    <div class="animate__jello">
+        <h1>Descriptions</h1>
+        <h2>Unity VR</h2>
+        <a>Unity VR is a class where kids learn how to use Unity<br> and make games that are Oculus Rift ready.</a>
+        <h2>Augmented Reality Creators</h2>
+        <a>Kids use a web-based application, CoSpaces, to create VR-ready <br> games, movies, tours, etc. to view on a
+            Google Cardboard.</a>
+    </div>
+    <br>
+
+    <a href="#" id="Opens" class="myButton">Message Flo</a>
+
+
+
+</body>
+
+<style>
+    body {
+        background: rgb(214, 6, 206);
+        background: linear-gradient(90deg, rgba(214, 6, 206, 1) 0%, rgba(121, 9, 119, 1) 35%, rgba(255, 0, 215, 0.9949332271971288) 100%);
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: white;
+    }
+
+    marquee {
+        size: 10px;
+    }
+
+    .button {
+        background-color: purple;
+        border-width: 19px;
+        border-color: black;
+        border-radius: 10px;
+    }
+
+    .border {
+        border-color: pink;
+        margin-bottom: 50px;
+        padding: 10;
+        border-width: 10;
+    }
+
+    .myButton {
+        box-shadow: inset 0px 1px 0px 0px #e184f3;
+        background: linear-gradient(to bottom, #c123de 5%, #a20dbd 100%);
+        background-color: #c123de;
+        border-radius: 6px;
+        border: 1px solid #a511c0;
+        display: inline-block;
+        cursor: pointer;
+        color: #ffffff;
+        font-family: Arial;
+        font-size: 15px;
+        font-weight: bold;
+        padding: 6px 24px;
+        text-decoration: none;
+        text-shadow: 0px 1px 0px #9b14b3;
+    }
+
+    .myButton:hover {
+        background: linear-gradient(to bottom, #a20dbd 5%, #c123de 100%);
+        background-color: #a20dbd;
+    }
+
+    .myButton:active {
+        position: relative;
+        top: 1px;
+    }
+
+    .modal {
+        display: none;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .modal-content {
+        background-color: #fefefe;
+        margin: 10;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+    }
+
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+</style>
+<script>
+    var modal = document.getElementById("sign");
+
+    var btn = document.getElementById("Opens");
+
+    var span = document.getElementsByClassName("close")[0];
+
+    btn.onclick = function () {
+        modal.style.display = "block";
+    }
+
+    span.onclick = function () {
+        modal.style.display = "none";
+    }
+
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+
+
+</html>
